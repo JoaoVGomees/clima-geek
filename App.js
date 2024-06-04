@@ -1,7 +1,10 @@
-
-import React from 'react';
-import Home from './src/Pages/Home/home';
+import { NavigationContainer } from "@react-navigation/native";
+import Routes from './src/Routes/BottomTabNav/routes'
 
 export default function App() {
-  return <Home />
+  return (
+    <NavigationContainer>
+      <Routes />
+    </NavigationContainer>
+  );
 }
