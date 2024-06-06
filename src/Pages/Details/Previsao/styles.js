@@ -76,7 +76,7 @@ export const MainLocationContainer = styled.View`
 
 export const MainLocationDetail = styled.Text`
     font-size: 18px;
-    font-weight: normal;
+    font-weight: 600;
     color: #22222B;
 `;
 
@@ -88,7 +88,7 @@ export const MainUfDetail = styled.Text`
 
 export const MainDesc = styled.Text`
     font-size: 24px;
-    font-weight: normal;
+    font-weight: 600;
     color: #22222B;
     padding-left: 114px;
 `;
@@ -98,16 +98,16 @@ export const MainForecastContainer = styled.View`
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 32.59px;
+    gap: 15.65px;
 `;
 
 export const MainForecast = styled.View`
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     flex-direction: row;
-    gap: 167px;
     margin-top: 31.89px;
+    gap: 167px;
     width: 360px;
     height: 46.13px;
     border-radius: 4px;
@@ -116,12 +116,12 @@ export const MainForecast = styled.View`
 
 export const MainForecastDay = styled.Text`
     font-size: 18px;
-    font-weight: 500;
+    font-weight: 600;
     color: #22222B;
 `;
 
 export const MainForecastMinMax = styled.Text`
     font-size: 18px;
-    font-weight: 500;
+    font-weight: 600;
     color: #22222B;
 `;
