@@ -93,6 +93,14 @@ export const MainDesc = styled.Text`
     padding-left: 114px;
 `;
 
+export const MainForecastContainer = styled.View`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 32.59px;
+`;
+
 export const MainForecast = styled.View`
     display: flex;
     justify-content: center;

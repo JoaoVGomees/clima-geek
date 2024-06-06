@@ -1,8 +1,8 @@
 import { createBottomTabNavigator, BottomTabBarHeightContext } from "@react-navigation/bottom-tabs";
 import Home from "../../Pages/Home/home";
-import Details from "../../Pages/Details/details";
 import Config from "../../Pages/Config/config";
 import { Ionicons } from "@expo/vector-icons";
+import { Previsao } from "../../Pages/Details/Previsao/previsao";
 
 const Tab = createBottomTabNavigator();
 
@@ -28,7 +28,7 @@ export default function Routes() {
 
       <Tab.Screen
         name="                 "
-        component={Details}
+        component={Previsao}
         options={{
           headerShown: false,
           tabBarIcon: ({ focused, size }) => {

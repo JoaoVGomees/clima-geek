@@ -23,10 +23,14 @@ export function Previsao() {
                         <S.MainDesc>Limpo</S.MainDesc>
                     </S.MainLocationDesc>
                 </S.MainClimaDetails>
-                <S.MainForecast>
-                    <S.MainForecastDay>{nome[0]}</S.MainForecastDay>
-                    <S.MainForecastMinMax>23°/34°</S.MainForecastMinMax>
-                </S.MainForecast>
+                <S.MainForecastContainer>
+                    {nome.map((dia, index) => (
+                        <S.MainForecast key={index}>
+                            <S.MainForecastDay>{dia}</S.MainForecastDay>
+                            <S.MainForecastMinMax>20°C/ 30°C</S.MainForecastMinMax>
+                        </S.MainForecast>
+                    ))}
+                </S.MainForecastContainer>
             </S.MainContainer>
         </S.Container>
     )
