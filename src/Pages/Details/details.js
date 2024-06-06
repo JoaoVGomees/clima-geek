@@ -1,7 +1,9 @@
-import { Text } from "react-native";
+
+import Localizacao from "./Localizacao";
 
 export default function Details() {
+
   return(
-    <Text>Olá Details</Text>
+    <Localizacao />
   );
 }

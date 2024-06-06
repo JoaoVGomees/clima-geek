@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Text, View, StatusBar, ImageBackground, TextInput, Button } from 'react-native';
 
-import { styles } from "./styles";
+import * as S from './styles';
 import WeatherCard from "./Components/WeatherCard/weatherCard";
 
 import Calor from '../../../assets/images/weather-imgs/imagem-calor.png';
@@ -47,24 +47,8 @@ export default function Home() {
   };
 
   return (
-    <View style={styles.container}>
-      <StatusBar style="auto" />
-      <ImageBackground source={ Background } style={styles.background}>
-        <Text style={styles.title}>Clima Geek</Text>
-        <TextInput
-          style={styles.input}
-          placeholder="Insira o nome da cidade"
-          onChange={dadoEntrada}
-        />
-        <Button title="Buscar" onPress={callApi} />
-        {stateTemperatura !== null && (
-          <WeatherCard
-            temperature={stateTemperatura}
-            description={descricao}
-            city={cidade}
-          />
-        )}
-      </ImageBackground>
-    </View>
+    <S.Home source={ Frio } resizeMode="cover">
+      <WeatherCard />
+    </S.Home>
   );
 }
