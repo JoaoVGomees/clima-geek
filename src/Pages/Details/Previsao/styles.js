@@ -88,7 +88,7 @@ export const MainUfDetail = styled.Text`
 
 export const MainDesc = styled.Text`
     font-size: 24px;
-    font-weight: normal;
+    font-weight: 600;
     color: #22222B;
     padding-left: 114px;
 `;
@@ -106,7 +106,6 @@ export const MainForecast = styled.View`
     justify-content: space-evenly;
     align-items: center;
     flex-direction: row;
-    gap: 167px;
     margin-top: 31.89px;
     gap: 167px;
     width: 360px;
