@@ -1,8 +1,8 @@
 import { createBottomTabNavigator, BottomTabBarHeightContext } from "@react-navigation/bottom-tabs";
 import Home from "../../Pages/Home/home";
 import Config from "../../Pages/Config/config";
+import Previsao from "../../Pages/Details/Previsao/previsao";
 import { Ionicons } from "@expo/vector-icons";
-import { Previsao } from "../../Pages/Details/Previsao/previsao";
 
 const Tab = createBottomTabNavigator();
 
