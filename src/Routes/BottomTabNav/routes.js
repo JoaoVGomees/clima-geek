@@ -1,6 +1,7 @@
-import { createBottomTabNavigator, BottomTabBarHeightContext } from "@react-navigation/bottom-tabs";
+import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import Home from "../../Pages/Home/home";
-import Details from "../../Pages/Details/details";
+import Previsao from "../../Pages/Details/Previsao/previsao";
+import Localizacao from "../../Pages/Details/Localizacao";
 import Config from "../../Pages/Config/config";
 import { Ionicons } from "@expo/vector-icons";
 
@@ -13,7 +14,7 @@ export default function Routes() {
   return (
     <Tab.Navigator>
       <Tab.Screen
-        name=" "
+        name="                  "
         component={Home}
         options={{
           headerShown: false,
@@ -28,7 +29,7 @@ export default function Routes() {
 
       <Tab.Screen
         name="                 "
-        component={Details}
+        component={Previsao}
         options={{
           headerShown: false,
           tabBarIcon: ({ focused, size }) => {

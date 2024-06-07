@@ -1,7 +1,6 @@
-import * as S from "./styles"
-import { Text } from "react-native"
-export function Previsao() {
+import * as S from "./styles";
 
+export default function Previsao() {
     const nome = ['Domingo', 'Segunda', 'Terça', 'Quarta', 'Quinta', 'Sexta', 'Sábado'];
 
     return (
