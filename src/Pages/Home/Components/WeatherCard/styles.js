@@ -1,35 +1,45 @@
-import { StyleSheet } from 'react-native';
+import styled from "styled-components/native";
 
-const styles = StyleSheet.create({
-  cardContainer: {
-    backgroundColor: '#FFFFFF',
-    padding: 20,
-    borderRadius: 10,
-    shadowColor: '#000',
-    shadowOffset: { width: 0, height: 2 },
-    shadowOpacity: 0.1,
-    shadowRadius: 4,
-    elevation: 5,
-    marginVertical: 10,
-    alignItems: 'center',
-  },
-  title: {
-    fontSize: 18,
-    fontWeight: 'bold',
-    marginBottom: 10,
-  },
-  icon: {
-    width: 50,
-    height: 50,
-    marginBottom: 10,
-  },
-  weatherInfo: {
-    alignItems: 'center',
-  },
-  text: {
-    fontSize: 16,
-    marginBottom: 5,
-  },
-});
+export const WeatherContainer = styled.View`
+  height: 300px;
+  width: 100%;
+  padding: 70px 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: rgba(0, 0, 0, .5);
+  position: absolute;
+  bottom: 0;
+`;
 
-export default styles;
+export const ContainerWeatherSubInfo = styled.View`
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+`;
+
+export const WeatherSubInfo = styled.Text`
+  padding: 0 12px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+`;
+
+export const ContainerWeatherDetails = styled.View`
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+`;
+
+export const WeatherTemp = styled.Text`
+  color: #fff;
+  font-size: 74px;
+  font-weight: bold;
+`;
+
+export const WeatherIcon = styled.Image`
+  width: 120px;
+  height: 120px;
+`;
