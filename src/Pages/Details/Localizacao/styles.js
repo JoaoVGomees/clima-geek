@@ -2,7 +2,7 @@ import styled from "styled-components/native";
 
 import { StatusBar } from 'react-native';
 
-const StatusBarHeight = StatusBar.currentHeight;
+const StatusBarHeight = StatusBar.currentHeight + 'px';
 
 export const Localizacao = styled.View`
   flex: 1;
