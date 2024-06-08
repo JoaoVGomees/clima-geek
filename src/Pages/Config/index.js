@@ -1,6 +1,8 @@
+// config.js
+
 import React from 'react';
 import * as S from './styles';
-import { useTheme } from '../../context/ThemeContext';
+import { useTheme } from '../../Context';
 
 export default function Config() {
   const { isDarkTheme, toggleTheme } = useTheme();

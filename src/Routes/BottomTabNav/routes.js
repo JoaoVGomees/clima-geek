@@ -10,6 +10,8 @@ import { useTheme } from 'styled-components/native';
 const Tab = createBottomTabNavigator();
 
 export default function Routes() {
+
+  const theme = useTheme();
   return (
     <Tab.Navigator
     screenOptions={{
@@ -36,7 +38,7 @@ export default function Routes() {
       />
 
       <Tab.Screen
-        name="Details"
+        name="Previsao"
         component={Previsao}
         options={{
           tabBarShowLabel: false,
