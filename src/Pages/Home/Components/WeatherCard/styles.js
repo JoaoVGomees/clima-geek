@@ -1,7 +1,7 @@
 import styled from "styled-components/native";
 
 export const WeatherContainer = styled.View`
-  height: 300px;
+  height: 25%;
   width: 100%;
   padding: 70px 80px;
   display: flex;

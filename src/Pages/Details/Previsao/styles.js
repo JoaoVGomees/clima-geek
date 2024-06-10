@@ -37,7 +37,7 @@ export const MainClimaDetails = styled.View`
     justify-content: space-around;
     align-items: center;
     flex-direction: row;
-    width: 360px;
+    width: 75%;
 `;
 
 export const MainTempMinMax = styled.View`
@@ -51,7 +51,7 @@ export const MainTempDetail = styled.Text`
     font-size: 32px;
     font-weight: normal;
     color: ${({ theme }) => theme.colors.text};
-    padding-right: 120px;
+    padding-right: 120px
 `;
 
 export const MainMaxMinDetail = styled.Text`
@@ -104,15 +104,16 @@ export const MainForecastContainer = styled.View`
 `;
 
 export const MainForecast = styled.View`
+    margin-top: 31.89px;
+    padding: 0px 10px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     flex-direction: row;
-    margin-top: 31.89px;
-    gap: 167px;
-    width: 360px;
+    width: 75%;
     height: 46.13px;
     border-radius: 4px;
+    background-color: ${({ theme }) => theme.colors.backgroundOption};
     color: ${({ theme }) => theme.colors.text};
 `;
 
