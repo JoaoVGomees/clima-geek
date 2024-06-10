@@ -1,9 +1,21 @@
-import * as S from './styles'
+import React from 'react';
+import * as S from './styles';
+import { useTheme } from '../../Context';
 
 export default function Config() {
-  return(
-    <S.Config>
-      <S.Texto>Página de Configurações</S.Texto>
-    </S.Config>
+  const { isDarkTheme, toggleTheme } = useTheme();
+
+  return (
+    <S.Container>
+      <S.StyledButton onPress={toggleTheme}>
+        <S.ButtonText>Alternar para o modo {isDarkTheme ? 'Claro' : 'Escuro'}</S.ButtonText>
+      </S.StyledButton>
+      <S.StyledButton onPress={() => { /* Função de edição */ }}>
+        <S.ButtonText>Editar</S.ButtonText>
+      </S.StyledButton>
+      <S.StyledButton onPress={() => { /* Função de limpeza */ }}>
+        <S.ButtonText>Limpar</S.ButtonText>
+      </S.StyledButton>
+    </S.Container>
   );
 }

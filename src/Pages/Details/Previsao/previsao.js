@@ -1,4 +1,5 @@
-import * as S from "./styles";
+import * as S from "./styles"
+import { Text } from "react-native"
 
 export default function Previsao() {
   const nome = [

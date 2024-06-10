@@ -6,6 +6,8 @@ export const Container = styled.View`
     justify-content: center;
     align-items: center;
     flex-direction: column;
+  background-color: ${({ theme }) => theme.colors.background};
+
 `;
 
 export const HeaderContainer = styled.View`
@@ -19,7 +21,7 @@ export const HeaderContainer = styled.View`
 export const HeaderTitle = styled.Text`
     font-size: 27px;
     font-weight: bold;
-    color: #22222B;
+    color: ${({ theme }) => theme.colors.text};
 `;
 
 export const MainContainer = styled.View`
@@ -48,14 +50,14 @@ export const MainTempMinMax = styled.View`
 export const MainTempDetail = styled.Text`
     font-size: 32px;
     font-weight: normal;
-    color: #22222B;
+    color: ${({ theme }) => theme.colors.text};
     padding-right: 120px;
 `;
 
 export const MainMaxMinDetail = styled.Text`
     font-size: 16px;
     font-weight: lighter;
-    color: #5A5A72;
+    color: ${({ theme }) => theme.colors.text};
     padding-right: 58px;
 `;
 
@@ -77,19 +79,19 @@ export const MainLocationContainer = styled.View`
 export const MainLocationDetail = styled.Text`
     font-size: 18px;
     font-weight: 600;
-    color: #22222B;
+    color: ${({ theme }) => theme.colors.text};
 `;
 
 export const MainUfDetail = styled.Text`
     font-size: 18px;
     font-weight: normal;
-    color: #22222B;
+    color: ${({ theme }) => theme.colors.text};
 `;
 
 export const MainDesc = styled.Text`
     font-size: 24px;
     font-weight: 600;
-    color: #22222B;
+    color: ${({ theme }) => theme.colors.text};
     padding-left: 114px;
 `;
 
@@ -111,17 +113,17 @@ export const MainForecast = styled.View`
     width: 360px;
     height: 46.13px;
     border-radius: 4px;
-    background-color: #CFE1FA;
+    color: ${({ theme }) => theme.colors.text};
 `;
 
 export const MainForecastDay = styled.Text`
     font-size: 18px;
     font-weight: 600;
-    color: #22222B;
+    color: ${({ theme }) => theme.colors.text};
 `;
 
 export const MainForecastMinMax = styled.Text`
     font-size: 18px;
     font-weight: 600;
-    color: #22222B;
+    color: ${({ theme }) => theme.colors.text};
 `;
