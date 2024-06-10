@@ -9,9 +9,10 @@ function AppContent() {
   
   const theme = {
     colors: {
-      background: isDarkTheme ? '#000' : '#fff',
-      text: isDarkTheme ? '#fff' : '#000',
-      tabBarBackground: isDarkTheme ? '#000' : '#fff',
+      background: isDarkTheme ? '#2A2A35' : '#fff',
+      backgroundOption: isDarkTheme ? 'rgba(0, 0, 0, .15)' : '#CFE1FA',
+      text: isDarkTheme ? '#fff' : '#22222B',
+      tabBarBackground: isDarkTheme ? '#2A2A35' : '#fff',
       tabBarActiveTintColor: isDarkTheme ? '#fff' : '#22222B',
       tabBarInactiveTintColor: isDarkTheme ? '#888' : '#74747C',
     },
