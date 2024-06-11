@@ -7,6 +7,8 @@ import Config from "../../Pages/Config";
 import { Ionicons } from "@expo/vector-icons";
 import { useTheme } from 'styled-components/native';
 
+import Avaliacao from '../../Pages/Api';
+
 const Tab = createBottomTabNavigator();
 
 export default function Routes() {
@@ -39,7 +41,7 @@ export default function Routes() {
 
       <Tab.Screen
         name="Previsao"
-        component={Previsao}
+        component={Localizacao}
         options={{
           tabBarShowLabel: false,
           headerShown: false,
@@ -62,6 +64,20 @@ export default function Routes() {
               size={size} 
               color={focused ? theme.colors.tabBarActiveTintColor : theme.colors.tabBarInactiveTintColor} 
               name={focused ? "settings" : "settings-outline"} />;
+          },
+        }}
+      />
+      <Tab.Screen
+        name="Avaliação"
+        component={Avaliacao}
+        options={{
+          tabBarShowLabel: false,
+          headerShown: false,
+          tabBarIcon: ({ focused, size }) => {
+            return <Ionicons 
+              size={size} 
+              color={focused ? theme.colors.tabBarActiveTintColor : theme.colors.tabBarInactiveTintColor} 
+              name={focused ? "telescope" : "telescope-outline"} />;
           },
         }}
       />

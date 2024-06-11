@@ -2,7 +2,7 @@ import React from 'react';
 import { NavigationContainer } from "@react-navigation/native";
 import Routes from './src/Routes/BottomTabNav/routes'
 import { ThemeProvider as StyledThemeProvider } from 'styled-components/native';
-import { ThemeProvider, useTheme } from './src/Context/index'
+import { ThemeProvider, useTheme } from './src/Context/index';
 
 function AppContent() {
   const { isDarkTheme } = useTheme();
